@@ -1,0 +1,24 @@
+//Print the integers  given in line by line into a single line separate by space//
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic 
+str ="";
+for (i=0; i<userInput.length; i++)
+{
+    str =str + userInput[i]+ " ";
+    
+}
+
+console.log(str.trim());
+
+});
