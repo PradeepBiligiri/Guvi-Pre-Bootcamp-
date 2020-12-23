@@ -1,0 +1,41 @@
+---------Reversing the string values--------
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic
+let a = userInput[0];
+var b = "";
+for (var i=a.length-1; i>=0; i--)
+
+{
+    b=b+a[i];
+}
+
+console.log(b);
+//end-here
+});
+
+
+-------Input-------
+Pradeep
+
+-------output------
+
+peedarP
+
+Execution Time:
+
+0.071s
+
+Memory Used:
+
+8324kb
