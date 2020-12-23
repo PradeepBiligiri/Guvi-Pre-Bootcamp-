@@ -1,0 +1,37 @@
+------ Converting Celcius to Farhenhiet and rounidng off answer to 2 decimal point---------
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic
+//formula to cobvert Celcius to Farhenhiet (1°C × 9/5) + 32 = 33.8°F
+
+a = +userInput;
+
+b = (32+(a*(9/5)));
+c = b.toFixed(2);
+console.log(c);
+
+//end-here
+});
+
+------input------
+456.456
+
+-----oytput------
+
+853.62
+
+Execution Time:
+
+0.072s
+Memory Used:
+8328kb
