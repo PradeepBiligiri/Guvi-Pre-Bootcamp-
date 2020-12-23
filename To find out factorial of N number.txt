@@ -1,0 +1,38 @@
+------To find out factorial of N number---------
+
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+const userInput = [];
+inp.on("line", (data) => {
+ userInput.push(data);
+});
+inp.on("close", () => {
+
+//start-here
+//Your code goes here … replace this line with your code logic
+n = +userInput[0];
+a = 1;
+for (var i=n; i>=1;i--)
+{
+    a =a*i;
+}
+
+console.log(a);
+//end-here
+});
+
+-----Input------
+4
+
+-----Output-----
+
+24
+
+Execution Time:
+
+0.074s
+
+Memory Used:
+8428kb
